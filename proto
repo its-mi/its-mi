@@ -1,0 +1,74 @@
+<html lang="pt-br">
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--codigo pra ajeitar a acentuação-->
+        <title>
+            Arte em Movimento
+        </title>
+    </head>
+    <body>
+        <header>
+            <img src="logo,jpg">
+        </header>
+        <article>
+            
+            <h1 id="titulo">
+                Arte em Movimento
+            </h1>
+    
+            <h2>
+                Brasília e entorno
+            </h2>
+        </body>
+        </html>
+        <nav role="navegation">
+        
+            <ul>
+            
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li><a href="art.html">Artistas</a></li>
+            
+            <li><a href="locais_brasilia.html">Entorno</a></li>
+            
+            <li><a href=" mais.html">Mapa</a></li>
+            
+        </ul>
+        
+            
+            </nav>
+            <img src="/Users/itsmi/Documents/MTAM/Site MTAM/t08v1t492o721.jpg"
+            alt="">
+            <p>
+
+                Boas vindas do site etcetcetc
+
+
+            </p>
+            
+            <p>
+
+                </a>
+            </p>
+        </article>
+<footer>
+
+</footer>        
+    </body>
+</html>
+<nav role="navegation">
+
+    <ul>
+    
+    <li><a href="index.html">Inicio</a></li>
+    
+    <li><a href="art.html">Artistas</a></li>
+    
+    <li><a href="locais_brasilia.html">Localização</a></li>
+    
+    <li><a href=" mais.html">Mais</a></li>
+    
+</ul>
+    
+    </nav>
+    
