@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnB - Principales Lugares</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Universidad de Brasilia - Principales Lugares</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Português</a></li>
+                <li><a href="es.html" aria-current="page">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="en.html">English</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección del Vídeo Institucional -->
+        <section aria-labelledby="video-titulo">
+            <h2 id="video-titulo">Vídeo Institucional de la UnB</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1"
+                    title="Vídeo Institucional de la Universidad de Brasilia"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    aria-label="Vídeo Institucional de la Universidad de Brasilia"
+                ></iframe>
+            </div>
+        </section>
+
+        <!-- Galería de la Biblioteca Central -->
+        <section aria-labelledby="biblioteca-titulo">
+            <h2 id="biblioteca-titulo">Biblioteca Central</h2>
+            <div class="galeria" id="galeria-biblioteca">
+                <figure>
+                    <img src="images/biblioteca1.jpg" alt="Biblioteca Central de la UnB - Vista frontal">
+                    <figcaption>Vista frontal de la Biblioteca Central</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/biblioteca2.jpg" alt="Biblioteca Central de la UnB - Interior">
+                    <figcaption>Interior de la Biblioteca Central</figcaption>
+                </figure>
+            </div>
+            <div class="botoes-navegacao">
+                <button class="anterior" aria-label="Imagen anterior">Anterior</button>
+                <button class="proximo"

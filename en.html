@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnB - Main Places</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>University of Brasilia - Main Places</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Português</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="en.html" aria-current="page">English</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Institutional Video Section -->
+        <section aria-labelledby="video-titulo">
+            <h2 id="video-titulo">UnB Institutional Video</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1"
+                    title="UnB Institutional Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    aria-label="UnB Institutional Video"
+                ></iframe>
+            </div>
+        </section>
+
+        <!-- Central Library Gallery -->
+        <section aria-labelledby="biblioteca-titulo">
+            <h2 id="biblioteca-titulo">Central Library</h2>
+            <div class="galeria" id="galeria-biblioteca">
+                <figure>
+                    <img src="images/biblioteca1.jpg" alt="UnB Central Library - Front view">
+                    <figcaption>Front view of the Central Library</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/biblioteca2.jpg" alt="UnB Central Library - Interior">
+                    <figcaption>Interior of the Central Library</figcaption>
+                </figure>
+            </div>
+            <div class="botoes-navegacao">
+                <button class="anterior" aria-label="Previous image">Previous</button>
+                <button class="proximo" aria-label="Next image">Next</button>
+    
