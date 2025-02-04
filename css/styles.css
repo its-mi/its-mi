@@ -79,4 +79,45 @@ main {
 .galeria img {
     max-width: 100%;
     height: auto;
-    display: none; /* Toda
+    display: none; /* Todas as imagens começam escondidas */
+}
+
+.galeria figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos para os botões de navegação */
+.botoes-navegacao {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #00420c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #006d1f;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #00420c;
+    color: #fff;
+    position: relative; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Espaço extra para o footer */
+}

@@ -50,4 +50,91 @@
                 </figure>
             </div>
             <div class="botoes-navegacao">
-                <button class="anterior" aria-label="Image précédente">Précédent</butt
+                <button class="anterior" aria-label="Image précédente">Précédent</button>
+                <button class="proximo" aria-label="Image suivante">Suivant</button>
+            </div>
+        </section>
+
+        <!-- Galerie de l'ICC -->
+        <section aria-labelledby="icc-titulo">
+            <h2 id="icc-titulo">ICC - Institut Central des Sciences</h2>
+            <div class="galeria" id="galeria-icc">
+                <figure>
+                    <img src="images/icc1.jpg" alt="ICC - Vue aérienne">
+                    <figcaption>Vue aérienne de l'ICC</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/icc2.jpg" alt="ICC - Couloirs internes">
+                    <figcaption>Couloirs internes de l'ICC</figcaption>
+                </figure>
+            </div>
+            <div class="botoes-navegacao">
+                <button class="anterior" aria-label="Image précédente">Précédent</button>
+                <button class="proximo" aria-label="Image suivante">Suivant</button>
+            </div>
+        </section>
+
+        <!-- Galerie du Beijódromo -->
+        <section aria-labelledby="beijodromo-titulo">
+            <h2 id="beijodromo-titulo">Beijódromo</h2>
+            <div class="galeria" id="galeria-beijodromo">
+                <figure>
+                    <img src="images/beijodromo1.jpg" alt="Beijódromo - Vue extérieure">
+                    <figcaption>Vue extérieure du Beijódromo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/beijodromo2.jpg" alt="Beijódromo - Événement culturel">
+                    <figcaption>Événement culturel au Beijódromo</figcaption>
+                </figure>
+            </div>
+            <div class="botoes-navegacao">
+                <button class="anterior" aria-label="Image précédente">Précédent</button>
+                <button class="proximo" aria-label="Image suivante">Suivant</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Université de Brasilia. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Fonction pour configurer la galerie
+        function configurarGaleria(galeriaId) {
+            const galeria = document.getElementById(galeriaId);
+            const images = galeria.querySelectorAll('img');
+            const boutons = galeria.parentElement.querySelector('.botoes-navegacao');
+            const precedent = boutons.querySelector('.anterior');
+            const suivant = boutons.querySelector('.proximo');
+            let currentIndex = 0;
+
+            // Afficher l'image actuelle
+            function showImage(index) {
+                images.forEach((img, i) => {
+                    img.style.display = i === index ? 'block' : 'none';
+                });
+            }
+
+            // Événement pour le bouton "Suivant"
+            suivant.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            });
+
+            // Événement pour le bouton "Précédent"
+            precedent.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                showImage(currentIndex);
+            });
+
+            // Afficher la première image au chargement de la page
+            showImage(currentIndex);
+        }
+
+        // Configurer chaque galerie
+        configurarGaleria('galeria-biblioteca');
+        configurarGaleria('galeria-icc');
+        configurarGaleria('galeria-beijodromo');
+    </script>
+</body>
+</html>
